@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="assets/seranna-ramlochan-profile-banner.jpg" alt="Seranna Ramlochan — AI Programme Lead, Technology Transformation and AI Governance" width="100%" />
+  <img src="assets/seranna-ramlochan-profile-banner.jpg" alt="Seranna Ramlochan - AI Programme Lead, Technology Transformation and AI Governance" width="100%" />
 </p>
 
 # Hello, I’m Seranna
 
-I lead complex technology and AI programmes from strategy through assurance, deployment and live-service transition. Over 15+ years, I have delivered transformation across local government, central government, energy and other regulated environments—bringing together architecture, engineering, governance, product, testing, change and senior stakeholders.
+I lead complex technology and AI programmes from strategy through assurance, deployment and live-service transition. Over 15+ years, I have delivered transformation across local government, central government, energy and other regulated environments - bringing together architecture, engineering, governance, product, testing, change and senior stakeholders.
 
 My current focus is helping organisations move from AI experimentation to controlled, measurable adoption. I design delivery models and governance that enable teams to innovate while maintaining human accountability, privacy, security and operational readiness.
 
