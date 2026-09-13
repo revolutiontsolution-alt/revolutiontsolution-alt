@@ -4,7 +4,7 @@
 
 # Hello, I’m Seranna
 
-I lead complex technology and AI programmes from strategy through assurance, deployment and live-service transition. Over 15+ years, I have delivered transformation across local government, central government, energy and other regulated environments - bringing together customers, architecture, data, engineering, governance, product, testing, change and senior stakeholders.
+Passionate about change, and leading complex technology and AI programmes from strategy through assurance, deployment and live-service transition. Over 15+ years, I have delivered transformation in private sector,  local government, central government, energy and other regulated environments - bringing together customers, architecture, data, engineering, governance, product, testing, change and senior stakeholders.
 
 My current focus is helping organisations move from AI experimentation to controlled, measurable adoption. I have established delivery models and governance frameworks that enable teams to innovate while maintaining human accountability, privacy, security and operational readiness. I have applied learning developed through assignments on the Oxford AI-Driven Business Transformation Executive Programme to progress risk-based governance aligned with the principles of the EU AI Act and ISO/IEC 42001, including the introduction of Ethical Governance Assessments and AI Impact Assessments.
 
@@ -39,7 +39,7 @@ flowchart LR
     F --> B
 ```
 
-My approach is practical: establish the outcome, make ownership visible, apply assurance in proportion to risk, and define the evidence needed for the next decision. Governance should enable responsible delivery—not become a separate process detached from it.
+My approach is practical: establish the outcome, make ownership visible, apply assurance in proportion to risk, and define the evidence needed for the next decision. Governance should enable responsible delivery-not become a separate process detached from it.
 
 ## Responsible AI delivery model
 
