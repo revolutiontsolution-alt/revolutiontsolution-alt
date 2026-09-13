@@ -4,18 +4,18 @@
 
 # Hello, I’m Seranna
 
-I lead complex technology and AI programmes from strategy through assurance, deployment and live-service transition. Over 15+ years, I have delivered transformation across local government, central government, energy and other regulated environments—bringing together architecture, engineering, governance, product, testing, change and senior stakeholders.
+I lead complex technology and AI programmes from strategy through assurance, deployment and live-service transition. Over 15+ years, I have delivered transformation across local government, central government, energy and other regulated environments - bringing together customers, architecture, data, engineering, governance, product, testing, change and senior stakeholders.
 
-My current focus is helping organisations move from AI experimentation to controlled, measurable adoption. I design delivery models and governance that enable teams to innovate while maintaining human accountability, privacy, security and operational readiness. I have applied learning developed through assignments on the Oxford AI-Driven Business Transformation Executive Programme to progress risk-based governance aligned with the principles of the EU AI Act and ISO/IEC 42001, including the introduction of Ethical Governance Assessments and AI Impact Assessments.
+My current focus is helping organisations move from AI experimentation to controlled, measurable adoption. I have established delivery models and governance frameworks that enable teams to innovate while maintaining human accountability, privacy, security and operational readiness. I have applied learning developed through assignments on the Oxford AI-Driven Business Transformation Executive Programme to progress risk-based governance aligned with the principles of the EU AI Act and ISO/IEC 42001, including the introduction of Ethical Governance Assessments and AI Impact Assessments.
 
 ## What I bring
 
-- **AI programme leadership** — integrated roadmaps, multi-squad delivery, prioritisation, dependencies, executive reporting and benefits focus
-- **Responsible AI governance** — risk-tiered assurance, governance boards, policy, impact assessments, evidence gates and human oversight
-- **Enterprise AI adoption** — Microsoft Copilot, AI agents, innovation labs, adoption pathways, training and operating models
-- **Technology deployment** — cutover planning, readiness, release governance, hypercare, service transition and supplier coordination
-- **Architecture-informed delivery** — credible collaboration across cloud, data, security, identity, integration and engineering teams
-- **Public-sector transformation** — navigating complex services, regulated data, procurement, cross-organisational governance and political accountability
+- **AI programme leadership** - integrated roadmaps, multi-squad delivery, prioritisation, dependencies, executive reporting and benefits focus
+- **Responsible AI governance** - risk-tiered assurance, governance boards, policy, impact assessments, evidence gates and human oversight
+- **Enterprise AI adoption**- Microsoft Copilot, AI agents, innovation labs, adoption pathways, training and operating models
+- **Technology deployment** - cutover planning, readiness, release governance, hypercare, service transition and supplier coordination
+- **Architecture-informed delivery** - credible collaboration across cloud, data, security, identity, integration and engineering teams
+- **Organisation transformation** - navigating complex services, regulated data, procurement, cross-organisational governance and political accountability
 
 ## Selected impact
 
