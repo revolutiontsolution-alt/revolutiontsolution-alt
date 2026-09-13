@@ -59,10 +59,11 @@ flowchart TD
 
 ## Current professional development
 
-- Oxford AI-Driven Business Transformation Executive Programme
-- IAPP AI Governance Professional certification — in progress
-- ISO/IEC 42001 AI Management Systems — in progress
 - MBA in Leading Innovation and Change, University of York
+- Oxford AI-Driven Business Transformation Executive Programme
+- IAPP AI Governance Professional certification - in progress
+- ISO/IEC 42001 AI Management Systems - in progress
+
 
 ## Explore my work
 
