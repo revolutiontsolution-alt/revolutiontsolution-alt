@@ -72,8 +72,9 @@ flowchart TD
 - [LinkedIn](https://www.linkedin.com/in/seranna-ramlochan-279a9837)
 
 
-### Interactive tools
+### AI Delivery Tools & Frameworks
 
+- [Responsible AI Delivery Assistant](responsible-ai-delivery-assistant.md) — Copilot Studio concept for turning AI use cases into risk-proportionate governance, assurance, testing and release-readiness pathways.
 - [Copilot Studio Cost Calculator](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/copilot-studio-cost-calculator.html) — reusable scenario model for comparing billable credit consumption, PAYG and pooled capacity costs across a generic agent portfolio.
 
 ## Let’s connect
