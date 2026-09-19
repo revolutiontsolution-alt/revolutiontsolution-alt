@@ -74,7 +74,7 @@ flowchart TD
 
 ### Interactive tools
 
-- [Copilot Studio Cost Calculator](tools/copilot-studio-cost-calculator.html) — reusable scenario model for comparing billable credit consumption, PAYG and pooled capacity costs across a generic agent portfolio.
+- [Copilot Studio Cost Calculator](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/copilot-studio-cost-calculator.html) — reusable scenario model for comparing billable credit consumption, PAYG and pooled capacity costs across a generic agent portfolio.
 
 ## Let’s connect
 
