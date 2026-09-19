@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+<title id="title">Seranna Ramlochan portfolio banner</title><desc id="desc">Grounded forest, sage, warm stone and bronze professional portfolio banner.</desc>
+<rect width="1280" height="360" fill="#33443A"/>
+<circle cx="1160" cy="70" r="210" fill="#52665A" opacity=".52"/>
+<circle cx="1080" cy="310" r="255" fill="#26342C" opacity=".42"/>
+<path d="M0 292 C230 238 420 338 650 286 S1010 224 1280 278 V360 H0Z" fill="#F3F0E8" opacity=".09"/>
+<rect x="72" y="76" width="64" height="5" rx="2.5" fill="#C5A46D"/>
+<text x="72" y="145" fill="#F3F0E8" font-family="Georgia,serif" font-size="46" font-weight="700">Seranna Ramlochan</text>
+<text x="72" y="194" fill="#D9DED8" font-family="Segoe UI,Arial,sans-serif" font-size="23">AI Programme Leadership · Responsible AI Governance · Technology Transformation</text>
+<text x="72" y="248" fill="#C5A46D" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" letter-spacing="2">STRATEGY  ·  ASSURANCE  ·  DELIVERY  ·  ADOPTION</text>
+</svg>
