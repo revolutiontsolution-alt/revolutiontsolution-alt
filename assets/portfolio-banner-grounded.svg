@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
-<title id="title">Seranna Ramlochan portfolio banner</title><desc id="desc">Grounded futuristic portfolio banner in deep forest, mineral green and soft luminous sage.</desc>
+<title id="title">Seranna Ramlochan portfolio banner</title><desc id="desc">Grounded futuristic portfolio banner using deep teal, warm ivory, muted olive, clay and stone.</desc>
 <defs>
-<linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0E1D1A"/><stop offset=".55" stop-color="#172A26"/><stop offset="1" stop-color="#28473F"/></linearGradient>
-<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#B9D7C5" stroke-opacity=".07" stroke-width="1"/></pattern>
-<radialGradient id="glow"><stop stop-color="#B9D7C5" stop-opacity=".18"/><stop offset="1" stop-color="#B9D7C5" stop-opacity="0"/></radialGradient>
+<linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0D3D3D"/><stop offset=".62" stop-color="#4A6363"/><stop offset="1" stop-color="#0D3D3D"/></linearGradient>
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#CED4B9" stroke-opacity=".08" stroke-width="1"/></pattern>
+<radialGradient id="glow"><stop stop-color="#CED4B9" stop-opacity=".22"/><stop offset="1" stop-color="#CED4B9" stop-opacity="0"/></radialGradient>
 </defs>
 <rect width="1280" height="360" fill="url(#bg)"/><rect width="1280" height="360" fill="url(#grid)"/>
-<circle cx="1110" cy="165" r="260" fill="url(#glow)"/>
-<path d="M920 40 L1210 40 L1260 90 L1260 280 L1190 330 L900 330" fill="none" stroke="#B9D7C5" stroke-opacity=".18" stroke-width="1.5"/>
-<path d="M975 82 L1165 82 L1218 135 L1218 246 L1160 295 L970 295" fill="none" stroke="#B9D7C5" stroke-opacity=".10"/>
-<circle cx="920" cy="40" r="4" fill="#B9D7C5"/><circle cx="1260" cy="280" r="4" fill="#B9D7C5"/><circle cx="970" cy="295" r="3" fill="#B9D7C5"/>
-<rect x="72" y="74" width="68" height="4" rx="2" fill="#B9D7C5"/>
-<text x="72" y="145" fill="#F1F4F1" font-family="Georgia,serif" font-size="46" font-weight="700">Seranna Ramlochan</text>
-<text x="72" y="194" fill="#DCE8E1" font-family="Segoe UI,Arial,sans-serif" font-size="23">AI Programme Leadership · Responsible AI Governance · Technology Transformation</text>
-<text x="72" y="248" fill="#B9D7C5" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" letter-spacing="2">STRATEGY  ·  ASSURANCE  ·  DELIVERY  ·  ADOPTION</text>
+<circle cx="1115" cy="160" r="260" fill="url(#glow)"/>
+<path d="M918 42 L1208 42 L1260 94 L1260 276 L1190 330 L900 330" fill="none" stroke="#CED4B9" stroke-opacity=".22" stroke-width="1.5"/>
+<path d="M974 84 L1166 84 L1218 136 L1218 244 L1160 294 L970 294" fill="none" stroke="#DED7C9" stroke-opacity=".16"/>
+<circle cx="920" cy="42" r="4" fill="#A6A94A"/><circle cx="1260" cy="276" r="4" fill="#D97B51"/><circle cx="970" cy="294" r="3" fill="#CED4B9"/>
+<rect x="72" y="74" width="68" height="4" rx="2" fill="#A6A94A"/>
+<text x="72" y="145" fill="#FDFBF7" font-family="Georgia,serif" font-size="46" font-weight="700">Seranna Ramlochan</text>
+<text x="72" y="194" fill="#F5F1E9" font-family="Segoe UI,Arial,sans-serif" font-size="23">AI Programme Leadership · Responsible AI Governance · Technology Transformation</text>
+<text x="72" y="248" fill="#CED4B9" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" letter-spacing="2">STRATEGY  ·  ASSURANCE  ·  DELIVERY  ·  ADOPTION</text>
 </svg>
