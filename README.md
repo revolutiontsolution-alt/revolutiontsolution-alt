@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/portfolio-banner-grounded.svg" alt="Seranna Ramlochan — AI Programme Lead, Technology Transformation and AI Governance" width="100%" />
+  <img src="assets/portfolio-banner-grounded.svg" alt="Seranna Ramlochan - AI Programme Lead, Technology Transformation and AI Governance" width="100%" />
 </p>
 
 # Hello, I’m Seranna
@@ -74,8 +74,8 @@ flowchart TD
 
 ### AI Delivery Tools & Frameworks
 
-- [Responsible AI Delivery Assistant](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/responsible-ai-delivery-assistant.html) — interactive risk triage that turns an AI use case into a proportionate governance, assurance, testing, release and monitoring pathway.
-- [AI Model Cost Calculator](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/ai-model-cost-calculator.html) — interactive model-consumption estimator using workload volumes, model choice, token assumptions and editable rates to forecast monthly and annual cost.
+- [Responsible AI Delivery Assistant](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/responsible-ai-delivery-assistant.html) - interactive risk triage that turns an AI use case into a proportionate governance, assurance, testing, release and monitoring pathway.
+- [AI Model Cost Calculator](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/ai-model-cost-calculator.html) - interactive model-consumption estimator using workload volumes, model choice, token assumptions and editable rates to forecast monthly and annual cost.
 
 ## Let’s connect
 
