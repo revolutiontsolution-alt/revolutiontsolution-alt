@@ -71,6 +71,11 @@ flowchart TD
 - [AI governance and delivery principles](governance-principles.md)
 - [LinkedIn](https://www.linkedin.com/in/seranna-ramlochan-279a9837)
 
+
+### Interactive tools
+
+- [Copilot Studio Cost Calculator](copilot-studio-cost-calculator.html) — reusable scenario model for comparing billable credit consumption, PAYG and pooled capacity costs across a generic agent portfolio.
+
 ## Let’s connect
 
 I am interested in senior contract opportunities where AI governance, complex programme delivery and enterprise transformation need to work as one discipline.
