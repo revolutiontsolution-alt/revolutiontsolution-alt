@@ -6,7 +6,7 @@
 
 The Responsible AI Delivery Assistant is designed to help teams move an AI idea from **opportunity to controlled live use**. Rather than treating governance as a final approval exercise, the assistant brings delivery, risk, assurance and evidence requirements together from the outset.
 
-It demonstrates how Responsible AI governance can be operationalised as part of delivery — helping users understand **what needs to happen, why it matters, who should be involved and what evidence is needed for the next decision**.
+It demonstrates how Responsible AI governance can be operationalised as part of delivery - helping users understand **what needs to happen, why it matters, who should be involved and what evidence is needed for the next decision**.
 
 ## User journey
 
@@ -97,29 +97,29 @@ Higher-risk indicators can trigger additional scrutiny rather than an automatic 
 
 The portfolio implementation can use:
 
-**Agent instructions** — establish scope, Responsible AI principles, boundaries and expected behaviour.
+**Agent instructions** - establish scope, Responsible AI principles, boundaries and expected behaviour.
 
-**Structured intake** — topics and Adaptive Cards collect consistent information rather than relying entirely on free-text prompts.
+**Structured intake** - topics and Adaptive Cards collect consistent information rather than relying entirely on free-text prompts.
 
-**Decision logic** — variables and conditions map responses to risk indicators and assurance requirements.
+**Decision logic** - variables and conditions map responses to risk indicators and assurance requirements.
 
-**Knowledge** — approved governance standards, assessment guidance and templates provide grounded guidance.
+**Knowledge** - approved governance standards, assessment guidance and templates provide grounded guidance.
 
-**Prompts** — generate structured explanations, draft assessments, test scenarios and evidence checklists from collected information.
+**Prompts** - generate structured explanations, draft assessments, test scenarios and evidence checklists from collected information.
 
-**Agent flows/actions** — support repeatable assessment and workflow steps where appropriate.
+**Agent flows/actions** - support repeatable assessment and workflow steps where appropriate.
 
-**Human decision points** — the assistant does not approve an AI system or replace specialist/accountable review.
+**Human decision points** - the assistant does not approve an AI system or replace specialist/accountable review.
 
 ## Responsible AI design principles
 
-1. **Governance by design** — identify assurance requirements early.
-2. **Risk proportionality** — increase controls and evidence as potential impact increases.
-3. **Human accountability** — retain identifiable ownership and decision-making.
-4. **Evidence over assertion** — release decisions should be supported by demonstrable testing and assurance.
-5. **Transparency** — make reasoning, limitations and required actions understandable.
-6. **Lifecycle governance** — assurance continues after go-live.
-7. **Reuse before reinvention** — use consistent organisational controls and patterns where possible.
+1. **Governance by design** - identify assurance requirements early.
+2. **Risk proportionality** - increase controls and evidence as potential impact increases.
+3. **Human accountability** - retain identifiable ownership and decision-making.
+4. **Evidence over assertion** - release decisions should be supported by demonstrable testing and assurance.
+5. **Transparency** - make reasoning, limitations and required actions understandable.
+6. **Lifecycle governance** - assurance continues after go-live.
+7. **Reuse before reinvention** - use consistent organisational controls and patterns where possible.
 
 ## Portfolio value
 
