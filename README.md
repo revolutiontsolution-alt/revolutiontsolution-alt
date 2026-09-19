@@ -74,8 +74,8 @@ flowchart TD
 
 ### AI Delivery Tools & Frameworks
 
-- [Responsible AI Delivery Assistant](responsible-ai-delivery-assistant.md) — Copilot Studio concept for turning AI use cases into risk-proportionate governance, assurance, testing and release-readiness pathways.
-- [Copilot Studio Cost Calculator](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/copilot-studio-cost-calculator.html) — reusable scenario model for comparing billable credit consumption, PAYG and pooled capacity costs across a generic agent portfolio.
+- [Responsible AI Delivery Assistant](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/responsible-ai-delivery-assistant.html) — interactive risk triage that turns an AI use case into a proportionate governance, assurance, testing, release and monitoring pathway.
+- [AI Model Cost Calculator](https://revolutiontsolution-alt.github.io/revolutiontsolution-alt/tools/ai-model-cost-calculator.html) — interactive model-consumption estimator using workload volumes, model choice, token assumptions and editable rates to forecast monthly and annual cost.
 
 ## Let’s connect
 
