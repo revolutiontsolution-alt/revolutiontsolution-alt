@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/seranna-ramlochan-profile-banner.jpg" alt="Seranna Ramlochan — AI Programme Lead, Technology Transformation and AI Governance" width="100%" />
+  <img src="assets/portfolio-banner-grounded.svg" alt="Seranna Ramlochan — AI Programme Lead, Technology Transformation and AI Governance" width="100%" />
 </p>
 
 # Hello, I’m Seranna
