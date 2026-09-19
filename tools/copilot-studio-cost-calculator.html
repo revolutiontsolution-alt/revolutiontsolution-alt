@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Reusable Copilot Studio credit consumption and cost scenario calculator.">
+<title>Copilot Studio Cost Calculator</title>
+<style>
+:root{--n:#0a2540;--n2:#123a6b;--g:#fdb913;--t:#0e8c7f;--a:#d98b27;--r:#c0392b;--p:#f4f7fa;--l:#d9e1ea;--i:#16202b;--s:#5e6e7e}
+*{box-sizing:border-box}body{margin:0;font:15px "Segoe UI",system-ui,sans-serif;background:var(--p);color:var(--i)}
+header{background:var(--n);color:#fff;padding:28px 24px;border-bottom:5px solid var(--g)}header div,main,footer{max-width:1180px;margin:auto}
+small{color:#b9c9d9}.ey{color:var(--g);font-weight:700;text-transform:uppercase;letter-spacing:.12em}h1{margin:.35rem 0;font-family:Georgia,serif}
+main{padding:22px 24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.panel,.table{background:#fff;border:1px solid var(--l);border-radius:10px;padding:14px;margin-bottom:16px}
+label{display:block;font-size:12px;font-weight:700;color:var(--n);margin-bottom:5px}input{width:100%;padding:8px;border:1px solid var(--l);border-radius:6px}
+button{border:1px solid var(--n);background:var(--n);color:#fff;border-radius:7px;padding:8px 13px;font-weight:600;cursor:pointer}.ghost{background:#fff;color:var(--n)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:16px 0}.card{background:var(--n);color:#fff;padding:14px;border-radius:10px}.card b{display:block;color:var(--g);font-size:12px;text-transform:uppercase}.card strong{display:block;font:700 26px Georgia,serif;margin-top:5px}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0}.note{font-size:12px;color:var(--s)}.rec{border-left:4px solid var(--n);background:#eaf1f8;padding:12px;margin:14px 0}
+.scroll{overflow:auto}table{border-collapse:collapse;width:100%;min-width:820px}th{background:var(--n);color:#fff;text-align:left;padding:8px;font-size:12px}td{padding:7px 8px;border-bottom:1px solid #edf1f5}td.num,th.num{text-align:right}td input{width:78px;padding:5px;text-align:right}
+.tag{color:#fff;border-radius:999px;padding:2px 7px;font-size:11px;font-weight:700}.zero{background:var(--t)}.bill{background:var(--a)}.ext{background:var(--r)}
+.caveat{border-left:4px solid var(--a);background:#fff6e6;padding:12px;font-size:13px}footer{padding:20px 24px 36px;color:var(--s);font-size:12px}
+</style></head>
+<body>
+<header><div><div class="ey">AI Cost Planning Toolkit</div><h1>Copilot Studio Cost Calculator</h1>
+<p>Reusable scenario model for estimating Copilot Studio credit consumption across a sample agent portfolio. Replace the example volumes and credit assumptions with your own demand data.</p>
+<small>Runs locally in your browser. Nothing entered is stored or transmitted by this page.</small></div></header>
+<main>
+<div class="panel grid">
+<div><label>Scenario</label><div class="actions"><button onclick="scenario(0)">Low</button><button onclick="scenario(1)">Base</button><button onclick="scenario(2)">High</button></div></div>
+<div><label>PAYG rate (£ per credit)</label><input id="rate" type="number" value="0.00769" step="0.00001" oninput="render()"><div class="note">Editable planning assumption.</div></div>
+<div><label>Pack price (£ / 25,000 credits / month)</label><input id="pack" type="number" value="153.80" step="0.01" oninput="render()"><div class="note">Editable planning assumption.</div></div>
+</div>
+<div class="cards"><div class="card"><b>Billable credits / month</b><strong id="credits">0</strong></div><div class="card"><b>PAYG / month</b><strong id="month">£0</strong></div><div class="card"><b>PAYG / year</b><strong id="year">£0</strong></div><div class="card"><b>Pooled packs / year</b><strong id="packs">£0</strong></div></div>
+<div class="rec" id="rec"></div>
+<div class="table"><h2>Sample agent portfolio</h2><p class="note">Example use cases are deliberately generic. Edit monthly volume and credits per unit to model your own portfolio.</p><div class="scroll"><table><thead><tr><th>Function</th><th>Agent / use case</th><th>Treatment</th><th class="num">Monthly volume</th><th class="num">Credits/unit</th><th class="num">Credits/month</th><th class="num">PAYG/year</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+<div class="actions"><button onclick="copySummary()">Copy summary</button><button class="ghost" onclick="downloadCsv()">Download CSV</button><button class="ghost" onclick="window.print()">Print</button></div>
+<div class="caveat"><b>Planning estimate, not a quote.</b> Pricing, licensing and metering can change. Validate current Microsoft commercial terms before procurement. This model excludes VAT, implementation, support, integration, backend/API, connector, Power Automate, Azure, Dataverse and Power Pages costs unless explicitly added. Zero-rated treatment should only be used where the relevant licensing conditions are confirmed.</div>
+</main><footer>Generic portfolio planning tool · Adapt assumptions to your organisation and validate current vendor pricing.</footer>
+<script>
+const A=[
+['Service Delivery','Meeting Summarisation','zero',[50,100,200],[80,115,150]],
+['Service Delivery','Case Note & Assessment Drafting','zero',[500,1500,3000],[80,115,150]],
+['Operations','Referral Triage Automation','bill',[500,1000,2000],[20,40,60]],
+['Operations','Document & Report Ingestion','zero',[250,500,1000],[100,250,400]],
+['Casework','Evidence Processing & Case Bundle','zero',[25,50,100],[200,300,400]],
+['Casework','Quality Assurance Review','zero',[500,1500,3000],[40,80,120]],
+['Customer Services','Service Request Triage','zero',[1500,3000,6000],[30,45,60]],
+['Customer Services','Case Routing Automation','bill',[100,250,500],[30,60,100]],
+['Finance','Account Insight & Risk Scoring','bill',[500,1500,3000],[40,80,120]],
+['Corporate','Request Classification & Drafting','bill',[100,200,400],[20,30,40]],
+['People','HR Case Management & Self-Service','zero',[500,1500,3000],[15,30,60]],
+['Operations','Application Summarisation','zero',[350,500,750],[100,150,200]],
+['Operations','Incident Triage & Intelligence','bill',[250,500,1000],[40,80,150]],
+['External','Customer Self-Service Reporting','ext',[1500,3000,6000],[30,45,60]],
+['External','Customer Enquiry Triage','ext',[5000,10000,20000],[15,28,40]],
+['External','Self-Service Referral','ext',[500,1000,2000],[60,90,120]]
+];
+let s=1,state=A.map(x=>[x[3][1],x[4][1]]);
+const gbp=n=>'£'+Math.round(n).toLocaleString('en-GB'),num=n=>Math.round(n).toLocaleString('en-GB');
+function scenario(i){s=i;state=A.map(x=>[x[3][i],x[4][i]]);render()}
+function totals(){let bill=0,notional=0;A.forEach((a,i)=>{let c=state[i][0]*state[i][1];a[2]==='zero'?notional+=c:bill+=c});return{bill,notional}}
+function render(){
+ const rate=+document.getElementById('rate').value||0,pack=+document.getElementById('pack').value||0;
+ document.getElementById('rows').innerHTML=A.map((a,i)=>{let c=state[i][0]*state[i][1],b=a[2]!=='zero',cls=a[2]==='ext'?'ext':a[2],lab=a[2]==='ext'?'External':a[2]==='bill'?'Billable':'Zero-rated';return '<tr><td>'+a[0]+'</td><td>'+a[1]+'</td><td><span class="tag '+cls+'">'+lab+'</span></td><td class="num"><input type="number" min="0" value="'+state[i][0]+'" oninput="state['+i+'][0]=+this.value||0;render()"></td><td class="num"><input type="number" min="0" value="'+state[i][1]+'" oninput="state['+i+'][1]=+this.value||0;render()"></td><td class="num">'+num(c)+'</td><td class="num">'+(b?gbp(c*rate*12):'£0')+'</td></tr>'}).join('');
+ const t=totals(),mo=t.bill*rate,yr=mo*12,pn=Math.ceil(t.bill/25000),py=pn*pack*12;
+ credits.textContent=num(t.bill);month.textContent=gbp(mo);year.textContent=gbp(yr);packs.textContent=gbp(py);
+ rec.innerHTML='<b>'+((py<yr)?'Pooled capacity packs':'Pay-as-you-go')+'</b> is lower in this simple comparison: '+gbp(Math.min(py,yr))+'/year vs '+gbp(Math.max(py,yr))+'/year. A further <b>'+num(t.notional)+'</b> credits/month are modelled as zero-rated; confirm licensing eligibility before relying on that treatment.';
+}
+function summary(){const t=totals(),r=+rate.value||0,p=+pack.value||0,n=Math.ceil(t.bill/25000);return ['COPILOT STUDIO COST CALCULATOR','Scenario: '+['Low','Base','High'][s],'Billable credits/month: '+num(t.bill),'Notional zero-rated credits/month: '+num(t.notional),'PAYG/year: '+gbp(t.bill*r*12),'Pooled packs/year: '+gbp(n*p*12)+' ('+n+' packs/month)','Planning estimate only; validate current pricing and licensing.'].join('\n')}
+async function copySummary(){try{await navigator.clipboard.writeText(summary())}catch(e){}}
+function downloadCsv(){const r=+rate.value||0;let x=['Function,Agent,Treatment,Monthly volume,Credits per unit,Monthly credits,PAYG GBP per year'];A.forEach((a,i)=>{let c=state[i][0]*state[i][1],y=a[2]==='zero'?0:Math.round(c*r*12);x.push([a[0],'"'+a[1]+'"',a[2],state[i][0],state[i][1],c,y].join(','))});let b=new Blob([x.join('\n')],{type:'text/csv'}),u=URL.createObjectURL(b),q=document.createElement('a');q.href=u;q.download='copilot-studio-costs.csv';q.click();URL.revokeObjectURL(u)}
+render();
+</script></body></html>
